@@ -6,7 +6,7 @@
   "main": "index.html",
   "scripts": {
     "start": "SET NODE_ENV=development && webpack-dev-server --mode development",
-    "test": "SET NODE_ENV=test && jest --no-cache",
+    "test": "SET NODE_ENV=test && jest --no-cache --watch",
     "test:watch": "SET NODE_ENV=test && jest --watch",
     "lint": "eslint --fix --ext .js,.jsx ."
   },

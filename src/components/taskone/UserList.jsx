@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { fetchUsers } from '../../utils/fetch';
 
 const Row = styled.div`
   display: flex;
@@ -57,10 +58,11 @@ export default class UserList extends Component {
 
   fetchData = () => {
     const { filter } = this.state;
-    fetch(`https://jsonplaceholder.typicode.com/users${filter ? `?username=${encodeURIComponent(filter)}` : ''}`).then(async (response) => {
+
+    fetchUsers(async (response) => {
       const data = await response.json();
       this.setState({ data });
-    });
+    }, filter);
   }
 
   render() {
@@ -80,15 +82,16 @@ export default class UserList extends Component {
         <div>
           Filter:
           <input
+            data-testid="searchBox"
             type="text"
             onChange={setFilter}
             value={value}
             placeholder="Enter username"
           />
         </div>
-        <Users>
-          {data.map((user) => (
-            <Row key={user.id}>
+        <Users data-testid="user_table">
+          {data && data.map((user) => (
+            <Row key={user.id} data-testid="user_rows">
               <UserInfo>
                 <span>{`Name: ${user.name}`}</span>
                 <span>{`Username: ${user.username}`}</span>

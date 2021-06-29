@@ -9,6 +9,8 @@ import UserList from './UserList';
 import { fetchUserUrl } from '../../utils/fetch';
 import { mockFetchUsers } from '../../utils/unit-tests/mocks';
 
+const renderUserList = () => render(<UserList />);
+
 jest.useFakeTimers();
 
 global.fetch = mockFetchUsers;
@@ -29,7 +31,7 @@ describe('The UserList component', () => {
     let container;
 
     beforeEach(() => {
-      ({ container } = render(<UserList />));
+      ({ container } = renderUserList());
     });
 
     it('should match snapshot', () => {
@@ -61,7 +63,7 @@ describe('The UserList component', () => {
 
   describe('when I enter Bret into the search filter', () => {
     beforeEach(() => {
-      render(<UserList />);
+      renderUserList();
 
       mockFetchUsers.mockClear();
 

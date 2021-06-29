@@ -68,11 +68,11 @@ export default class UserList extends Component {
 
     const setFilter = (e) => {
       this.setState({ value: e.target.value });
-      const debounceFn = debounce((_e) => {
-        this.setState({ filter: _e.target.value }, this.fetchData);
+      const debounceFn = debounce(() => {
+        this.setState({ filter: e.target.value }, this.fetchData);
       });
 
-      debounceFn(e);
+      debounceFn();
     };
 
     return (

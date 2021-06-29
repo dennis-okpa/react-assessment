@@ -5,9 +5,10 @@
   "repository": "https://github.com/Adthena/react-assessment",
   "main": "index.html",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --mode development",
-    "test": "NODE_ENV=test jest --no-cache",
-    "test:watch": "NODE_ENV=test jest --watch"
+    "start": "SET NODE_ENV=development && webpack-dev-server --mode development",
+    "test": "SET NODE_ENV=test && jest --no-cache",
+    "test:watch": "SET NODE_ENV=test && jest --watch",
+    "lint": "eslint --fix --ext .js,.jsx ."
   },
   "devDependencies": {
     "@babel/core": "^7.12.13",

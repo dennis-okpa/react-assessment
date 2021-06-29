@@ -51,6 +51,10 @@ export default class UserList extends Component {
     };
   }
 
+  componentDidMount() {
+    this.fetchData();
+  }
+
   fetchData = () => {
     const { filter } = this.state;
     fetch(`https://jsonplaceholder.typicode.com/users${filter ? `?username=${encodeURIComponent(filter)}` : ''}`).then(async (response) => {
@@ -59,17 +63,13 @@ export default class UserList extends Component {
     });
   }
 
-  componentDidMount() {
-    this.fetchData();
-  }
-
   render() {
     const { data, value } = this.state;
 
     const setFilter = (e) => {
       this.setState({ value: e.target.value });
-      const debounceFn = debounce((e) => {
-        this.setState({ filter: e.target.value }, this.fetchData);
+      const debounceFn = debounce((_e) => {
+        this.setState({ filter: _e.target.value }, this.fetchData);
       });
 
       debounceFn(e);

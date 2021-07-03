@@ -7,11 +7,11 @@ import {
   Overlay,
   DemoButton,
 } from '@components/styled-components/Task';
-import { reducer, initialState } from '../../utils/redux/reducer';
+import { modalSelection, initialState } from '../../utils/redux/reducer';
 import { ACTION } from '../../assets/constants';
 
 const DemoPage = () => {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [state, dispatch] = useReducer(modalSelection, initialState);
 
   return (
     <Task>
@@ -19,6 +19,7 @@ const DemoPage = () => {
       <Content>
         <DemoButton type="button" onClick={() => dispatch({ type: ACTION.DATA_LOADER })}>Data loading modal</DemoButton>
         <DemoButton type="button" onClick={() => dispatch({ type: ACTION.DELETE_FILE })}>Delete file modal</DemoButton>
+        <DemoButton type="button" onClick={() => dispatch({ type: ACTION.DELETE_REPORT })}>Delete report modal</DemoButton>
       </Content>
       {state.modal && (
         <>

@@ -1,10 +1,11 @@
 import React from 'react';
 import { ACTION } from '../../assets/constants';
 import DeleteFileModal from '../../components/ui-components/DeleteFileModal';
+import DeleteReportModal from '../../components/ui-components/DeleteReportModal';
 
 export const initialState = { modal: null };
 
-export const reducer = (state, action) => {
+export const modalSelection = (state, action) => {
   switch (action.type) {
     case ACTION.DATA_LOADER:
       return {
@@ -14,6 +15,12 @@ export const reducer = (state, action) => {
       return {
         modal: (
           <DeleteFileModal />
+        )
+      };
+    case ACTION.DELETE_REPORT:
+      return {
+        modal: (
+          <DeleteReportModal />
         )
       };
     case 'reset':

@@ -1,22 +1,21 @@
 import React from 'react';
 import {
-  Panel,
-  ActionPanel,
   YesBtn,
   NoBtn
 } from '@components/styled-components/Task';
+import Modal from './Modal';
 
 const DeleteFileModal = () => (
-  <Panel>
-    <div>
-      <h3>Are you sure you want to delete all of your files?</h3>
-      <span>This action cannot be undone.</span>
-    </div>
-    <ActionPanel>
-      <YesBtn onClick={(e) => { e.stopPropagation(); console.log('working yes'); }}>Yes</YesBtn>
-      <NoBtn onClick={(e) => { e.stopPropagation(); console.log('working no'); }}>No</NoBtn>
-    </ActionPanel>
-  </Panel>
+  <Modal
+    title="Are you sure you want to delete all of your files?"
+    explanation="This action cannot be undone."
+    actionPanel={(
+      <>
+        <YesBtn onClick={(e) => { e.stopPropagation(); console.log('yes sir'); }}>Yes</YesBtn>
+        <NoBtn onClick={(e) => { e.stopPropagation(); console.log('no sir'); }}>No</NoBtn>
+      </>
+    )}
+  />
 );
 
 export default DeleteFileModal;

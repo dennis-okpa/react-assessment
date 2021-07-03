@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { color } from '../../assets/palette';
 
 export const Task = styled.div`
   display: flex;
@@ -6,9 +7,11 @@ export const Task = styled.div`
   width: 800px;
   margin: auto;
 `;
+
 export const Content = styled.div`
   text-align: justify;
 `;
+
 export const StyledList = styled.ol`
   text-align: justify;
   
@@ -16,9 +19,11 @@ export const StyledList = styled.ol`
     line-height: 2;
   }
 `;
+
 export const Heading = styled.h1`
   color: #216298;
 `;
+
 export const DesignList = styled.div`
   display: flex;
   flex-direction: column;
@@ -53,8 +58,17 @@ export const Modal = styled.div`
     display: block;
   }
 
+  span {
+    color: #1a1a1a;
+    margin-bottom: 30px;
+  }
+
   h3 {
-    margin-top: 0;
+    margin: 0 0 5px;
+  }
+
+  hr {
+    margin-bottom: 10px;
   }
 `;
 
@@ -62,14 +76,13 @@ export const Panel = styled.div`
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  border: 1px solid red;
-  border-radius: 2%;
+  border: 2px solid ${color.border.primary};
+  border-radius: 10px;
   width: 600px;
-  height: 180px;
   text-align: left;
   padding: 30px;
   flex-flow: wrap;
-  background: white;
+  background: ${color.background.primary};
 `;
 
 export const Overlay = styled.div`
@@ -97,19 +110,33 @@ export const ActionPanel = styled.div`
 `;
 
 const ActionBtn = styled.button`
-  padding: 10px 20px;
-  color: blue;
+  padding: 10px 40px;
+  color: ${color.font.primary};
   font-weight: bold;
   border-width: 0;
-  border-radius: 2px;
+  border-radius: 5px;
+
+  &:active {
+    box-shadow: 5px 5px 3px lightgrey;
+  }
 `;
 
 export const YesBtn = styled(ActionBtn)`
   margin-right: 10px;
-  background: lightgrey;
+  background: ${color.background.secondary};
 `;
 
 export const NoBtn = styled(ActionBtn)`
-  border: 1px solid blue;
+  border: 1.5px solid ${color.border.secondaryn};
   background: white;
+`;
+
+export const Select = styled.select`
+  width: 100%;
+  display: block;
+  color: ${color.font.primary};
+`;
+
+export const Plead = styled.span`
+  margin: 10px 0 30px;
 `;

@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The DeleteReportModal Component when rendered should match snapshot 1`] = `
+<div>
+  <div
+    class="Task__Panel-sc-7z955n-6 diyQSp"
+  >
+    <div>
+      <h3>
+        Are you sure you want to delete this report and its history?
+      </h3>
+      <hr />
+      <span>
+        If you delete the
+         
+        <strong>
+          Executive metrics
+        </strong>
+         
+        report, you will also delete the associated history:
+      </span>
+    </div>
+    <select
+      class="Task__Select-sc-7z955n-13 dPObDm"
+      multiple=""
+    >
+      <option>
+        January 2020
+      </option>
+      <option>
+        Febuary 2020
+      </option>
+      <option>
+        March 2020
+      </option>
+      <option>
+        April 2020
+      </option>
+      <option>
+        May 2020
+      </option>
+      <option>
+        June 2020
+      </option>
+      <option>
+        July 2020
+      </option>
+      <option>
+        August 2020
+      </option>
+      <option>
+        September 2020
+      </option>
+      <option>
+        October 2020
+      </option>
+      <option>
+        November 2020
+      </option>
+      <option>
+        December 2020
+      </option>
+    </select>
+    <span
+      class="Task__Plead-sc-7z955n-14 erYGTz"
+    >
+      Please type the word ‘Delete’ to remove the
+       
+      <strong>
+        Executive metrics
+      </strong>
+       
+      report and its associated history:
+    </span>
+    <div
+      class="Task__ActionPanel-sc-7z955n-9 jDSgIL"
+    >
+      <button
+        class="Task__ActionBtn-sc-7z955n-10 Task__YesBtn-sc-7z955n-11 iozTJj bgrwqn"
+      >
+        Delete all
+      </button>
+      <button
+        class="Task__ActionBtn-sc-7z955n-10 Task__NoBtn-sc-7z955n-12 iozTJj dxGCKi"
+      >
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
+`;

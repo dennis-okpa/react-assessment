@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The DemoPage component when renders should match snapshot 1`] = `
+<div>
+  <div
+    class="Task-sc-7z955n-0 lgLqQs"
+  >
+    <h1
+      class="Task__Heading-sc-7z955n-3 dFWZeR"
+    >
+      Demo Page
+    </h1>
+    <div
+      class="Task__Content-sc-7z955n-1 jkQdat"
+    >
+      <button
+        class="Task__DemoButton-sc-7z955n-8 gFvSgS"
+        type="button"
+      >
+        Data loading modal
+      </button>
+      <button
+        class="Task__DemoButton-sc-7z955n-8 gFvSgS"
+        type="button"
+      >
+        Delete file modal
+      </button>
+      <button
+        class="Task__DemoButton-sc-7z955n-8 gFvSgS"
+        type="button"
+      >
+        Delete report modal
+      </button>
+    </div>
+  </div>
+</div>
+`;

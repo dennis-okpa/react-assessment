@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The UserList component when rendered should match snapshot 1`] = `
+<div>
+  <div>
+    <div>
+      Filter:
+      <input
+        data-testid="searchBox"
+        placeholder="Enter username"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="UserList__Users-sc-1is5oap-2 fLyAcC"
+      data-testid="user_table"
+    >
+      <div
+        class="UserList__Row-sc-1is5oap-0 VrZXB"
+        data-testid="user_rows"
+      >
+        <div
+          class="UserList__UserInfo-sc-1is5oap-1 boxWUq"
+        >
+          <span>
+            Name: Leanne Graham
+          </span>
+          <span>
+            Username: Bret
+          </span>
+        </div>
+        <div>
+          <div>
+            <span>
+              Kulas Light
+            </span>
+            <span>
+              Apt. 556
+            </span>
+            <span>
+              Gwenborough
+            </span>
+            <span>
+              92998-3874
+            </span>
+          </div>
+          <div>
+            <span>
+              Sincere@april.biz
+            </span>
+            <span>
+              1-770-736-8031 x56442
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="UserList__Row-sc-1is5oap-0 VrZXB"
+        data-testid="user_rows"
+      >
+        <div
+          class="UserList__UserInfo-sc-1is5oap-1 boxWUq"
+        >
+          <span>
+            Name: Leanne Graham
+          </span>
+          <span>
+            Username: Bret
+          </span>
+        </div>
+        <div>
+          <div>
+            <span>
+              Kulas Light
+            </span>
+            <span>
+              Apt. 556
+            </span>
+            <span>
+              Gwenborough
+            </span>
+            <span>
+              92998-3874
+            </span>
+          </div>
+          <div>
+            <span>
+              Sincere@april.biz
+            </span>
+            <span>
+              1-770-736-8031 x56442
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

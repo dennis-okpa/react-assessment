@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The DeleteFileModal Component when rendered should match snapshot 1`] = `
+<div>
+  <div
+    class="Task__Panel-sc-7z955n-6 diyQSp"
+  >
+    <div>
+      <h3>
+        Are you sure you want to delete all of your files?
+      </h3>
+      <hr />
+      <span>
+        This action cannot be undone.
+      </span>
+    </div>
+    <div
+      class="Task__ActionPanel-sc-7z955n-9 jDSgIL"
+    >
+      <button
+        class="Task__ActionBtn-sc-7z955n-10 Task__YesBtn-sc-7z955n-11 iozTJj bgrwqn"
+      >
+        Yes
+      </button>
+      <button
+        class="Task__ActionBtn-sc-7z955n-10 Task__NoBtn-sc-7z955n-12 iozTJj dxGCKi"
+      >
+        No
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -1,10 +1,12 @@
+/* eslint-disable max-len */
 import React from 'react';
-import { Content,
+import {
+  Content,
   Heading,
   StyledList,
   Task
 } from '@components/styled-components/Task';
-import UserList from '@components/taskone/UserList'
+import UserList from '@components/taskone/UserList';
 
 const TaskOne = () => (
   <Task>
